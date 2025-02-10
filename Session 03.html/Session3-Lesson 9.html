@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên</title>
+</head>
+<body>
+    <h2>Form Đăng Ký Thành Viên</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Ngày sinh:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Nam"> <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ"> <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Số điện thoại:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ:</label></td>
+                <td><textarea id="address" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="role">Vai trò trong nhóm:</label></td>
+                <td>
+                    <select id="role" name="role">
+                        <option value="member">Thành viên</option>
+                        <option value="leader">Trưởng nhóm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Sở thích:</label></td>
+                <td><input type="text" id="hobbies" name="hobbies"></td>
+            </tr>
+            <tr>
+                <td><label for="skills">Kỹ năng:</label></td>
+                <td><textarea id="skills" name="skills"></textarea></td>
+            </tr>
+            <tr>
+                <td>Thời gian rảnh:</td>
+                <td>
+                    <input type="checkbox" id="morning" name="free_time" value="Sáng"> <label for="morning">Sáng</label>
+                    <input type="checkbox" id="afternoon" name="free_time" value="Chiều"> <label for="afternoon">Chiều</label>
+                    <input type="checkbox" id="evening" name="free_time" value="Tối"> <label for="evening">Tối</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="reason">Lý do tham gia nhóm:</label></td>
+                <td><textarea id="reason" name="reason"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="color">Màu yêu thích:</label></td>
+                <td><input type="color" id="color" name="color"></td>
+            </tr>
+            <tr>
+                <td>Đăng ký nhận bản tin:</td>
+                <td><input type="checkbox" id="newsletter" name="newsletter"> <label for="newsletter">Có</label></td>
+            </tr>
+            <tr>
+                <td>Nhận thông báo qua email:</td>
+                <td>
+                    <input type="radio" id="email_notify" name="notify" value="Email"> <label for="email_notify">Email</label>
+                    <input type="radio" id="sms_notify" name="notify" value="SMS"> <label for="sms_notify">SMS</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Đăng ký thành viên</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

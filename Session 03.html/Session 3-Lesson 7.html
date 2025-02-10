@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Sinh Viên</title>
+</head>
+<body>
+    <h2>Form Đăng Ký Sinh Viên</h2>
+    <form action="http://mysever.com" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Ngày sinh:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Nam"> <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ"> <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Số điện thoại:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="major">Chuyên ngành:</label></td>
+                <td><input type="text" id="major" name="major"></td>
+            </tr>
+            <tr>
+                <td><label for="year">Năm nhập học:</label></td>
+                <td><input type="number" id="year" name="year" min="2000" max="2050"></td>
+            </tr>
+            <tr>
+                <td><label for="gpa">Điểm GPA:</label></td>
+                <td><input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ:</label></td>
+                <td><textarea id="address" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="class">Lớp học:</label></td>
+                <td>
+                    <select id="class" name="class">
+                        <option value="lop1">Lớp 1</option>
+                        <option value="lop2">Lớp 2</option>
+                        <option value="lop3">Lớp 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="registration_date">Ngày đăng ký học:</label></td>
+                <td><input type="datetime-local" id="registration_date" name="registration_date"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Gửi thông tin</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
