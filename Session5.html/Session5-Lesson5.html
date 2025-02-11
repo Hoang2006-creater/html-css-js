@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups of Selectors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        h1 {
+            color: #00a0ff;
+            font-size: 24px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        .highlight {
+            background-color: #fffae6;
+            padding: 10px;
+            border-left: 5px solid yellow;
+        }
+        pre {
+            padding: 3px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>5. Groups of selectors</h1>
+        <p>
+            A comma-separated list of selectors represents the union of all elements selected by each selector in the list.
+            (A comma is U+002C.) For example, in CSS when several selectors share the same declarations, they may be grouped into a comma-separated list.
+            White space may appear before and after the comma.
+        </p>
+        <div class="highlight">
+            <p><strong>CSS example:</strong></p>
+            <p>In this example, we condense three rules with identical declarations into one.</p>
+            <pre>
+h1 { font-family: sans-serif }
+h2 { font-family: sans-serif }
+h3 { font-family: sans-serif }
+    </pre>
+    <pre>
+is equivalant to:
+    </pre>
+    <pre>
+h1, h2, h3 { font-family: sans-serif}
+        </pre>
+        </div>
+    </div>
+</body>
+</html>
