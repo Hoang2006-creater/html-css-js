@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    background-color: #2ecc71;
+    width: 25%;
+    padding: 20px;
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.content {
+    background-color: #e74c3c;
+    width: 75%;
+    padding: 20px;
+    height: 300px;
+    margin-top: 10px;
+}
+.footer {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}

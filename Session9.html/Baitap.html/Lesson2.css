@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+    border: 2px solid gray;
+}
+.box {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 20%; 
+    margin: 1px ;
+}

@@ -1,0 +1,26 @@
+ * {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.container {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 600px;
+    align-items: baseline;
+}
+.container .child {
+    background-color:hotpink;
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    border: 10px solid white;
+}
+.container .child:nth-child(1) {
+    flex-shrink: 10;
+    flex-basis: 100px;
+}
