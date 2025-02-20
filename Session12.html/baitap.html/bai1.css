@@ -1,0 +1,20 @@
+.form-select {
+    background-color: #ff6347; /* Màu cam */
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.form-select:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+option {
+    background-color: #ff6347;
+    color: white;
+    font-size: 24px;
+}
+body{
+    height: 100vh;
+}

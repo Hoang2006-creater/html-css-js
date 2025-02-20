@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 35px;
+    color:#62646a ;
+    font-family: 'Courier New', Courier, monospace;
+}
+header nav{
+    background-color: aqua;
+    height: 50px;
+}
+header div{
+    background-color: #b2d6ff;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+main div.feature:nth-of-type(1){
+    background-color:#f5cf8d;
+}
+main div.feature:nth-of-type(2){
+    background-color:#c8c6fa ;
+}
+main div.feature:nth-of-type(3){
+    background-color:#f09a9d ;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .feature {
+    width: 33.3%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+main .signup {
+    background-color:#d7e9fe ;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.content{
+    background-color: #ebedf0;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+.contaner{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and(max-width: 1200px) {
+    header{
+        order: 1;
+    }
+    .content{
+        order: 2;
+    }
+    main {
+        order: 3;
+    }
+    main.feature,
+main.signup{
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+}
+main.signup{
+    order: 1;
+}
+main.feature{
+    order: 2;;
+}
+}
+@media screen and (max-width:768px ) {
+    main{
+        flex-direction: column;
+    }
+    main > *{
+        width: 100% !important;
+    }
+}
