@@ -1,0 +1,87 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    height: 120px;
+}
+
+.nav1 {
+    padding-left: 106px;
+}
+
+.nav3 {
+    padding-right: 100px;
+}
+
+.nav4 {
+    padding-right: 24px;
+}
+
+.nav2 {
+    padding: 44px 0;
+}
+
+
+.search-bar {
+    position: absolute;
+    top: 740px;
+    left: 39%;
+    background: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #3a5a40;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+
+.container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-right: 332px;
+}
+
+
+.image-container {
+    width: 100%;
+    margin-left: 250px;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
