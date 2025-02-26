@@ -9,4 +9,4 @@ if(a>=b && a>=c){
 }else { 
     largest=c;
 }
-alert("Số lớn nhất là:" +largest);
+alert("Số lớn nhất là: " +largest);
