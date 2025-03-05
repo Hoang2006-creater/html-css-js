@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Mẫu - Robert Garcia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #a2e94a;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5rem 2rem 2rem;
+            background-color: #1a1a1a;
+            min-height: 100vh;
+        }
+
+        .profile-content {
+            max-width: 50%;
+        }
+
+        .profile-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .profile-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+
+        .contact-btn {
+            background-color: #a2e94a;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #1a1a1a;
+        }
+
+        .contact-btn:hover {
+            background-color: #8ec93a;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .profile-img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .projects {
+            padding: 4rem 2rem;
+            background-color: #1a1a1a;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .projects p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        .demo-btn, .github-btn {
+            color: #a2e94a;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .demo-btn:hover, .github-btn:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-content {
+                max-width: 100%;
+            }
+
+            .profile-img {
+                width: 200px;
+                margin-top: 2rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hackathon Mẫu</h1>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-content">
+                <h1>HI, I AM ROBERT GARCIA.</h1>
+                <p>A Sydney-based front-end developer passionate about building accessible and user-friendly websites.</p>
+                <button class="contact-btn">CONTACT ME</button>
+                <div class="social-links">
+                    <a href="#">in</a>
+                    <a href="#">c</a>
+                </div>
+            </div>
+            <img src="robert-garcia.jpg" alt="Robert Garcia" class="profile-img">
+        </section>
+
+        <section class="projects">
+            <h2>FEATURED PROJECTS</h2>
+            <p>Here are some of the selected projects that showcase my passion for front-end development.</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Promotional Landing Page">
+                    <h3>Promotional Landing Page for our favorite show</h3>
+                    <p>Teamed up with a designer to breathe life into a promotional webpage for Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.</p>
+                    <p><strong>Year:</strong> 2023</p>
+                    <p><strong>Role:</strong> Front-end Developer</p>
+                    <a href="#" class="demo-btn">LIVE DEMO</a> | <a href="#" class="github-btn">SEE ON GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Blog Site for World News">
+                    <h3>Blog site for World News</h3>
+                    <p>Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in front-end development.</p>
+                    <p><strong>Year:</strong> 2023</p>
+                    <p><strong>Role:</strong> Front-end Developer</p>
+                    <a href="#" class="demo-btn">LIVE DEMO</a> | <a href="#" class="github-btn">SEE ON GITHUB</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
